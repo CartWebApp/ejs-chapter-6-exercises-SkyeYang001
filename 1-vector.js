@@ -6,6 +6,25 @@
 
 // Your code here.
 
+class Vec {
+    constructor(x,y) {
+        this.x = x;
+        this.y = y;
+    }
+    plus() {
+        return this.x + this.x + this.y + this.y;
+    }
+    minus() {
+        return this.x - this.x, this.y - this.y;
+    }
+    get length() {
+        return this.calclength();
+    }
+    calclength() {
+        return Math.floor(Math.random() * (this.x) + (this.y));
+    }
+}
+
 
 // Tests:
 console.log(new Vec(1, 2).plus(new Vec(2, 3)));
