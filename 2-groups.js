@@ -8,8 +8,29 @@ Give the class a static from method that takes an iterable object as argument an
 
 class Group {
     // Your code here.
+    constructor(array) {
+      this.array = array;
+    }
+    
+    set Group([]) {
+      this.array = [];
+    }
+
+    static from() {
+      return this.array;
+    }
+    
+    form() {
+      Group.x = x;
+      Group.y = y;
+    }
+
+    static has() {
+      if (x === x) {
+        return 'true';
+      }
+    }
   }
-  
 
   // Tests:
   let group = Group.from([10, 20]);
@@ -22,3 +43,13 @@ class Group {
   console.log(group.has(10));
   // → false
 
+/*
+form() {
+      Group.x = x;
+      Group.y = y;
+    }
+    has() { 
+      if (x === x) {
+      return true;
+      } 
+*/

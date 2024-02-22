@@ -10,18 +10,20 @@ class Vec {
     constructor(x,y) {
         this.x = x;
         this.y = y;
+        Vec.x = x;
+        Vec.y = y;
     }
     plus() {
-        return this.x + this.x + this.y + this.y;
+        return `Vec {x: '${this.x + Vec.x}'}, {y: '${this.y + Vec.y}'},`;
     }
     minus() {
-        return this.x - this.x, this.y - this.y;
+        return `Vec {x: '${this.x - Vec.x}'}, {y: '${this.y - Vec.y}'},`
     }
     get length() {
         return this.calclength();
     }
     calclength() {
-        return Math.floor(Math.random() * (this.x) + (this.y));
+        return Math.sqrt(Vec.x * Vec.x + Vec.y * Vec.y);
     }
 }
 
