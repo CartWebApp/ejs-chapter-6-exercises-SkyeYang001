@@ -17,20 +17,19 @@ class Group {
     }
 
     static from() {
-      return this.array;
-    }
-    
-    form() {
       Group.x = x;
       Group.y = y;
+      return this.array;
     }
 
-    static has() {
-      if (x === x) {
-        return 'true';
+    has() {
+      for (let {x,y} of group) {
+        
       }
     }
   }
+
+
 
   // Tests:
   let group = Group.from([10, 20]);
